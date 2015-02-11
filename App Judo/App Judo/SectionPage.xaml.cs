@@ -90,8 +90,8 @@ namespace App_Judo
         /// <param name="e">Données d'événement décrivant l'élément sur lequel l'utilisateur a cliqué.</param>
         private void ItemView_ItemClick(object sender, ItemClickEventArgs e)
         {
-            var itemId = ((SampleDataItem)e.ClickedItem).UniqueId;
-            if (!Frame.Navigate(typeof(ItemPage), itemId))
+            var itemId = ((SampleDataTech)e.ClickedItem).UniqueId;
+            if (!Frame.Navigate(typeof(TechniPage), itemId))
             {
                 var resourceLoader = ResourceLoader.GetForCurrentView("Resources");
                 throw new Exception(resourceLoader.GetString("NavigationFailedExceptionMessage"));

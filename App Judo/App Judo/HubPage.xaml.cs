@@ -114,7 +114,7 @@ namespace App_Judo
         {
             // Accédez à la page de destination souhaitée, puis configurez la nouvelle page
             // en transmettant les informations requises en tant que paramètre de navigation.
-            var itemId = ((SampleDataItem)e.ClickedItem).UniqueId;
+            var itemId = ((SampleDataItems)e.ClickedItem).UniqueId;
             if (!Frame.Navigate(typeof(ItemPage), itemId))
             {
                 throw new Exception(this.resourceLoader.GetString("NavigationFailedExceptionMessage"));
