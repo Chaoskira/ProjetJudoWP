@@ -1,11 +1,11 @@
 ﻿<Page x:Name="pageRoot"
-    x:Class="App_Judo.ItemPage"    
+    x:Class="App_Judo.ItemPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:App_Judo"
-    xmlns:data="using:App_Judo.Data"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:App_Judo.Data"
     mc:Ignorable="d"
     DataContext="{Binding DefaultViewModel.Item, RelativeSource={RelativeSource Self}}"
     d:DataContext="{Binding Groups[0].Items[0], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"
@@ -33,8 +33,7 @@
 
         <!-- Panneau Titre -->
         <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <TextBlock x:Uid="Header" Text="application name" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0" />
-            <TextBlock Text="{Binding Title}" Style="{ThemeResource HeaderTextBlockStyle}" Margin="0,-6.5,0,26.5" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+            <TextBlock FontSize="35" Text="{Binding Title}" Style="{ThemeResource HeaderTextBlockStyle}" Margin="0,-6.5,110.833,26.5" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" Height="53"/>
         </StackPanel>
 
         <!-- 
@@ -42,7 +41,13 @@
                   pour afficher les détails de l’élément en cours
         -->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
-
+            <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Traduction" VerticalAlignment="Top" Margin="40,-46,0,0" Height="24" Width="156" FontStyle="Italic"/>
+            <TextBlock FontSize="14" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="71,85,0,0"/>
+            <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Famille : " VerticalAlignment="Top" Margin="57,121,0,0" RenderTransformOrigin="-0.02,1.065"/>
+            <TextBlock FontSize="14" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="71,164,0,0"/>
+            <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ceinture Requise : " VerticalAlignment="Top" Margin="57,49.667,0,0" Grid.Row="1"/>
         </Grid>
+        <Image Source="Assets\DarkGray.png" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="170" Margin="211,21.667,0,0" Grid.Row="1"/>
+        <MediaElement HorizontalAlignment="Left" Height="181" VerticalAlignment="Top" Width="292" RenderTransformOrigin="1.44,4.161" Margin="57,267.667,0,0" Grid.Row="1"/>
     </Grid>
 </Page>
