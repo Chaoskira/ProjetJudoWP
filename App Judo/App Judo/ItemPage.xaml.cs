@@ -70,7 +70,7 @@ namespace App_Judo
         {
             // TODO: créez un modèle de données approprié pour le domaine posant problème pour remplacer les exemples de données
             var item = await SampleDataSource.GetItemAsync((string)e.NavigationParameter);
-            this.DefaultViewModel["Item"] = item;
+            this.DefaultViewModel["Group"] = item;
         }
 
         /// <summary>

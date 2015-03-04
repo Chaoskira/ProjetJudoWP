@@ -7,8 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:data="using:App_Judo.Data"
     mc:Ignorable="d"
-    DataContext="{Binding DefaultViewModel.Item, RelativeSource={RelativeSource Self}}"
-    d:DataContext="{Binding Groups[0].Items[0].SousItems[0], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"
+    DataContext="{Binding DefaultViewModel.Group, RelativeSource={RelativeSource Self}}"
+    d:DataContext="{Binding Groups[0], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.Transitions>
         <TransitionCollection>
@@ -33,7 +33,7 @@
 
         <!-- Panneau Titre -->
         <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <TextBlock FontSize="35" Text="{Binding Title}" Style="{ThemeResource HeaderTextBlockStyle}" Margin="0,-6.5,110.833,26.5" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" Height="53"/>
+            <TextBlock FontSize="35" Text="{Binding Items[0].SousItems[0].Title}" Style="{ThemeResource HeaderTextBlockStyle}" Margin="0,-6.5,110.833,26.5" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" Height="53"/>
         </StackPanel>
 
         <!-- 
@@ -41,15 +41,15 @@
                   pour afficher les détails de l’élément en cours
         -->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
-            <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Traduction" VerticalAlignment="Top" Margin="40,-46,0,0" Height="24" Width="156" FontStyle="Italic"/>
-            <TextBlock FontSize="14" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="40,85,0,0"/>
-            <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Famille : " VerticalAlignment="Top" Margin="26,126,0,0" RenderTransformOrigin="-0.02,1.065"/>
-            <TextBlock FontSize="14" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="40,164,0,0"/>
-            <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ceinture Requise : " VerticalAlignment="Top" Margin="26,47,0,0"/>
-            <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Description : " VerticalAlignment="Top" Margin="26,460,0,0"/>
-            <TextBlock FontSize="14" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="40,499,0,-199" Height="257" Width="286"/>
+            <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Items[0].SousItems[0].Traduction}" VerticalAlignment="Top" Margin="40,-46,0,0" Height="24" Width="156" FontStyle="Italic"/>
+            <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Title}" VerticalAlignment="Top" Margin="40,85,0,0"/>
+            <TextBlock FontSize="17" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Famille : " VerticalAlignment="Top" Margin="10,121,0,0" RenderTransformOrigin="-0.02,1.065" Height="23" Width="69"/>
+            <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Items[0].Title}" VerticalAlignment="Top" Margin="40,164,0,0"/>
+            <TextBlock FontSize="17" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ceinture Requise : " VerticalAlignment="Top" Margin="10,40,0,0" Height="25" Width="135"/>
+            <TextBlock FontSize="17" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Description : " VerticalAlignment="Top" Margin="10,460,0,0" RenderTransformOrigin="0.185,0.511"/>
+            <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="40,499,0,-199" Height="257" Width="286"/>
         </Grid>
         <Image Source="Assets\DarkGray.png" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="170" Margin="211,21.667,0,0" Grid.Row="1"/>
         <MediaElement HorizontalAlignment="Left" Height="181" VerticalAlignment="Top" Width="292" RenderTransformOrigin="1.44,4.161" Margin="57,267.667,0,0" Grid.Row="1"/>
-     </Grid>
+    </Grid>
 </Page>
