@@ -31,7 +31,7 @@ namespace App_Judo.Data
             this.Description = description;
             this.ImagePath = imagePath;
             this.Content = content;
-            this.Item = new ObservableCollection<SampleDataTech>();
+            this.SousItems = new ObservableCollection<SampleDataTech>();
         }
 
         public string UniqueId { get; private set; }
@@ -40,7 +40,7 @@ namespace App_Judo.Data
         public string Description { get; private set; }
         public string ImagePath { get; private set; }
         public string Content { get; private set; }
-        public ObservableCollection<SampleDataTech> Item { get; set; }
+        public ObservableCollection<SampleDataTech> SousItems { get; set; }
 
         public override string ToString()
         {
@@ -178,7 +178,7 @@ namespace App_Judo.Data
                     foreach (JsonValue SousItemValue in itemsObject["SousItems"].GetArray())
                     {
                         JsonObject SouItemObject = SousItemValue.GetObject();
-                        group.Items[group.Items.Count - 1].Item.Add(new SampleDataTech(SouItemObject["UniqueId"].GetString(),
+                        group.Items[group.Items.Count - 1].SousItems.Add(new SampleDataTech(SouItemObject["UniqueId"].GetString(),
                                                            SouItemObject["Title"].GetString(),
                                                            SouItemObject["Subtitle"].GetString(),
                                                            SouItemObject["ImagePath"].GetString(),
