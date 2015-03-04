@@ -20,8 +20,6 @@
                             "UniqueId": "Group-2-Item-1-It-1",
                             "Title": "Seoi-Nage",
                             "Traduction": "toto",
-                            "Family": "Te-waza",
-                            "Ceinture":  "Jaune",
                             "ImagePath": "Assets/LightGray.png",
                             "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
                             "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
@@ -30,8 +28,6 @@
                             "UniqueId": "Group-2-Item-1-It-2",
                             "Title": "Tai-Otoshi",
                             "Traduction": "toto",
-                            "Family": "Te-waza",
-                            "Ceinture":  "Jaune",
                             "ImagePath": "Assets/LightGray.png",
                             "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
                             "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
