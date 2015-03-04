@@ -25,6 +25,8 @@
         Cette grille sert de panneau racine à la page qui définit deux lignes :
         * la ligne 0 contient le titre de la page
         * la ligne 1 contient le reste de la disposition de la page
+        
+        Cette page lie la page de familles de techniques aux pages de chaque techniques
     -->
     <Grid>
         <Grid.ChildrenTransitions>
