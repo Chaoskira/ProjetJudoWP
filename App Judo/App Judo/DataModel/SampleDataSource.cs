@@ -175,15 +175,15 @@ namespace App_Judo.Data
                                                        itemsObject["Description"].GetString(),
                                                        itemsObject["Content"].GetString()));
 
-                    foreach (JsonValue itemValue in itemsObject["Matriarche"].GetArray())
+                    foreach (JsonValue SousItemValue in itemsObject["SousItems"].GetArray())
                     {
-                        JsonObject itemObject = itemValue.GetObject();
-                        //group.Items[group.Items.Count -1].Item.Add(new SampleDataTech(itemObject["UniqueId"].GetString(),
-                        //                                   itemObject["Title"].GetString(),
-                        //                                   itemObject["Subtitle"].GetString(),
-                        //                                   itemObject["ImagePath"].GetString(),
-                        //                                   itemObject["Description"].GetString()));
-                        group.Items[group.Items.Count - 1].Item.Add(new SampleDataTech("a", "b", "c", "Assets/LightGray.png", "e"));
+                        JsonObject SouItemObject = SousItemValue.GetObject();
+                        group.Items[group.Items.Count - 1].Item.Add(new SampleDataTech(SouItemObject["UniqueId"].GetString(),
+                                                           SouItemObject["Title"].GetString(),
+                                                           SouItemObject["Subtitle"].GetString(),
+                                                           SouItemObject["ImagePath"].GetString(),
+                                                           SouItemObject["Description"].GetString()));
+                        //group.Items[group.Items.Count - 1].Item.Add(new SampleDataTech("a", "b", "c", "Assets/LightGray.png", "e"));
                     }
                 }
                 this.Groups.Add(group);
