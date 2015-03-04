@@ -9,6 +9,7 @@
         "Items": [
             {
                 "UniqueId": "Group-1-Item-1",
+<<<<<<< HEAD
                 "Title": "Te-Waza",
                 "Subtitle": "Projections",
                 "ImagePath": "Assets/LightGray.png",
@@ -17,6 +18,29 @@
                 "Items": [
                     { 
                         "UniqueId":  "Group-1-Item-1-"
+=======
+                "Title": "Te-waza",
+                "Subtitle": "Projections main / epaule",
+                "ImagePath": "Assets/LightGray.png",
+                "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus ",
+                "Matriarche": [
+                    {
+                        "UniqueId": "Group-1-Item-1-It-1",
+                        "Title": "Te-",
+                        "Subtitle": "Projections main / epaule",
+                        "ImagePath": "Assets/LightGray.png",
+                        "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                        "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
+                    },
+                    {
+                        "UniqueId": "Group-1-Item-1-It-2",
+                        "Title": "Te-wa",
+                        "Subtitle": "Projections main / epaule",
+                        "ImagePath": "Assets/LightGray.png",
+                        "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                        "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
+>>>>>>> origin/master
                     }
                 ]
             },

@@ -21,9 +21,9 @@ namespace App_Judo.Data
     /// <summary>
     /// Modèle de données d'élément générique.
     /// </summary>
-    public class SampleDataItem
+    public class SampleDataItems
     {
-        public SampleDataItem(String uniqueId, String title, String subtitle, String imagePath, String description, String content)
+        public SampleDataItems(String uniqueId, String title, String subtitle, String imagePath, String description, String content)
         {
             this.UniqueId = uniqueId;
             this.Title = title;
@@ -31,6 +31,32 @@ namespace App_Judo.Data
             this.Description = description;
             this.ImagePath = imagePath;
             this.Content = content;
+            this.Item = new ObservableCollection<SampleDataTech>();
+        }
+
+        public string UniqueId { get; private set; }
+        public string Title { get; private set; }
+        public string Subtitle { get; private set; }
+        public string Description { get; private set; }
+        public string ImagePath { get; private set; }
+        public string Content { get; private set; }
+        public ObservableCollection<SampleDataTech> Item { get; set; }
+
+        public override string ToString()
+        {
+            return this.Title;
+        }
+    }
+
+    public class SampleDataTech
+    {
+        public SampleDataTech(String uniqueId, String title, String subtitle, String imagePath, String description)
+        {
+            this.UniqueId = uniqueId;
+            this.Title = title;
+            this.Subtitle = subtitle;
+            this.Description = description;
+            this.ImagePath = imagePath;
         }
 
         public string UniqueId { get; private set; }
@@ -58,7 +84,7 @@ namespace App_Judo.Data
             this.Subtitle = subtitle;
             this.Description = description;
             this.ImagePath = imagePath;
-            this.Items = new ObservableCollection<SampleDataItem>();
+            this.Items = new ObservableCollection<SampleDataItems>();
         }
 
         public string UniqueId { get; private set; }
@@ -66,7 +92,7 @@ namespace App_Judo.Data
         public string Subtitle { get; private set; }
         public string Description { get; private set; }
         public string ImagePath { get; private set; }
-        public ObservableCollection<SampleDataItem> Items { get; private set; }
+        public ObservableCollection<SampleDataItems> Items { get; set; }
 
         public override string ToString()
         {
@@ -106,7 +132,7 @@ namespace App_Judo.Data
             return null;
         }
 
-        public static async Task<SampleDataItem> GetItemAsync(string uniqueId)
+        public static async Task<SampleDataItems> GetItemAsync(string uniqueId)
         {
             await _sampleDataSource.GetSampleDataAsync();
             // Une simple recherche linéaire est acceptable pour les petits groupes de données
@@ -114,6 +140,7 @@ namespace App_Judo.Data
             if (matches.Count() == 1) return matches.First();
             return null;
         }
+
 
         private async Task GetSampleDataAsync()
         {
@@ -127,6 +154,7 @@ namespace App_Judo.Data
             JsonObject jsonObject = JsonObject.Parse(jsonText);
             JsonArray jsonArray = jsonObject["Groups"].GetArray();
 
+
             foreach (JsonValue groupValue in jsonArray)
             {
                 JsonObject groupObject = groupValue.GetObject();
@@ -136,15 +164,27 @@ namespace App_Judo.Data
                                                             groupObject["ImagePath"].GetString(),
                                                             groupObject["Description"].GetString());
 
-                foreach (JsonValue itemValue in groupObject["Items"].GetArray())
+                foreach (JsonValue itemsValue in groupObject["Items"].GetArray())
                 {
-                    JsonObject itemObject = itemValue.GetObject();
-                    group.Items.Add(new SampleDataItem(itemObject["UniqueId"].GetString(),
-                                                       itemObject["Title"].GetString(),
-                                                       itemObject["Subtitle"].GetString(),
-                                                       itemObject["ImagePath"].GetString(),
-                                                       itemObject["Description"].GetString(),
-                                                       itemObject["Content"].GetString()));
+                    
+                    JsonObject itemsObject = itemsValue.GetObject();
+                    group.Items.Add(new SampleDataItems(itemsObject["UniqueId"].GetString(),
+                                                       itemsObject["Title"].GetString(),
+                                                       itemsObject["Subtitle"].GetString(),
+                                                       itemsObject["ImagePath"].GetString(),
+                                                       itemsObject["Description"].GetString(),
+                                                       itemsObject["Content"].GetString()));
+
+                    foreach (JsonValue itemValue in itemsObject["Matriarche"].GetArray())
+                    {
+                        JsonObject itemObject = itemValue.GetObject();
+                        //group.Items[group.Items.Count -1].Item.Add(new SampleDataTech(itemObject["UniqueId"].GetString(),
+                        //                                   itemObject["Title"].GetString(),
+                        //                                   itemObject["Subtitle"].GetString(),
+                        //                                   itemObject["ImagePath"].GetString(),
+                        //                                   itemObject["Description"].GetString()));
+                        group.Items[group.Items.Count - 1].Item.Add(new SampleDataTech("a", "b", "c", "Assets/LightGray.png", "e"));
+                    }
                 }
                 this.Groups.Add(group);
             }
