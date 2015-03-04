@@ -42,12 +42,14 @@
         -->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
             <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Traduction" VerticalAlignment="Top" Margin="40,-46,0,0" Height="24" Width="156" FontStyle="Italic"/>
-            <TextBlock FontSize="14" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="71,85,0,0"/>
-            <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Famille : " VerticalAlignment="Top" Margin="57,121,0,0" RenderTransformOrigin="-0.02,1.065"/>
-            <TextBlock FontSize="14" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="71,164,0,0"/>
-            <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ceinture Requise : " VerticalAlignment="Top" Margin="57,49.667,0,0" Grid.Row="1"/>
+            <TextBlock FontSize="14" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="40,85,0,0"/>
+            <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Famille : " VerticalAlignment="Top" Margin="26,126,0,0" RenderTransformOrigin="-0.02,1.065"/>
+            <TextBlock FontSize="14" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="40,164,0,0"/>
+            <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ceinture Requise : " VerticalAlignment="Top" Margin="26,47,0,0"/>
+            <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Description : " VerticalAlignment="Top" Margin="26,460,0,0"/>
+            <TextBlock FontSize="14" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="40,499,0,-199" Height="257" Width="286"/>
         </Grid>
         <Image Source="Assets\DarkGray.png" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="170" Margin="211,21.667,0,0" Grid.Row="1"/>
         <MediaElement HorizontalAlignment="Left" Height="181" VerticalAlignment="Top" Width="292" RenderTransformOrigin="1.44,4.161" Margin="57,267.667,0,0" Grid.Row="1"/>
-    </Grid>
+     </Grid>
 </Page>
