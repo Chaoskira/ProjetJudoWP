@@ -9,7 +9,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     DataContext="{Binding DefaultViewModel.Group, RelativeSource={RelativeSource Self}}"
-    d:DataContext="{Binding Groups, Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"
+    d:DataContext="{Binding Groups[0].Items[0], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.Transitions>
         <TransitionCollection>
@@ -49,7 +49,7 @@
             AutomationProperties.Name="Item In Group"
             TabIndex="1"
             Grid.Row="1"
-            ItemsSource="{Binding Items}"
+            ItemsSource="{Binding Item}"
             IsItemClickEnabled="True"
             ItemClick="ItemView_ItemClick"
             SelectionMode="None"
@@ -68,7 +68,7 @@
                         </Border>
                         <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="14.5,0,0,0">
                             <TextBlock Text="{Binding Title}" Style="{ThemeResource ListViewItemTextBlockStyle}"/>
-                            
+
                             <TextBlock Text="{Binding Subtitle}" Style="{ThemeResource ListViewItemSubheaderTextBlockStyle}"/>
                         </StackPanel>
                     </Grid>
@@ -77,3 +77,4 @@
         </ListView>
     </Grid>
 </Page>
+

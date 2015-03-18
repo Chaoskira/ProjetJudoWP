@@ -31,7 +31,7 @@ namespace App_Judo.Data
             this.Description = description;
             this.ImagePath = imagePath;
             this.Content = content;
-            this.SousItems = new ObservableCollection<SampleDataTech>();
+            this.Item = new ObservableCollection<SampleDataTech>();
         }
 
         public string UniqueId { get; private set; }
@@ -40,7 +40,7 @@ namespace App_Judo.Data
         public string Description { get; private set; }
         public string ImagePath { get; private set; }
         public string Content { get; private set; }
-        public ObservableCollection<SampleDataTech> SousItems { get; set; }
+        public ObservableCollection<SampleDataTech> Item { get; set; }
 
         public override string ToString()
         {
@@ -50,18 +50,18 @@ namespace App_Judo.Data
 
     public class SampleDataTech
     {
-        public SampleDataTech(String uniqueId, String title, String traduction, String imagePath, String description)
+        public SampleDataTech(String uniqueId, String title, String subtitle, String imagePath, String description)
         {
             this.UniqueId = uniqueId;
             this.Title = title;
-            this.Traduction = traduction;
+            this.Subtitle = subtitle;
             this.Description = description;
             this.ImagePath = imagePath;
         }
 
         public string UniqueId { get; private set; }
         public string Title { get; private set; }
-        public string Traduction { get; private set; }
+        public string Subtitle { get; private set; }
         public string Description { get; private set; }
         public string ImagePath { get; private set; }
         public string Content { get; private set; }
@@ -178,9 +178,9 @@ namespace App_Judo.Data
                     foreach (JsonValue SousItemValue in itemsObject["SousItems"].GetArray())
                     {
                         JsonObject SouItemObject = SousItemValue.GetObject();
-                        group.Items[group.Items.Count - 1].SousItems.Add(new SampleDataTech(SouItemObject["UniqueId"].GetString(),
+                        group.Items[group.Items.Count - 1].Item.Add(new SampleDataTech(SouItemObject["UniqueId"].GetString(),
                                                            SouItemObject["Title"].GetString(),
-                                                           SouItemObject["Traduction"].GetString(),
+                                                           SouItemObject["Subtitle"].GetString(),
                                                            SouItemObject["ImagePath"].GetString(),
                                                            SouItemObject["Description"].GetString()));
                         //group.Items[group.Items.Count - 1].Item.Add(new SampleDataTech("a", "b", "c", "Assets/LightGray.png", "e"));
