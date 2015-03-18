@@ -35,13 +35,16 @@ namespace App_Judo
         private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
         private readonly ResourceLoader resourceLoader = ResourceLoader.GetForCurrentView("Resources");
 
+
         private String research;
        
+        ParametreNavigate param = new ParametreNavigate();
 
         public HubPage()
         {
             this.InitializeComponent();
 
+            
             // Hub est pris en charge uniquement en mode Portrait
             DisplayInformation.AutoRotationPreferences = DisplayOrientations.Portrait;
 
@@ -106,7 +109,8 @@ namespace App_Judo
         private void GroupSection_ItemClick(object sender, ItemClickEventArgs e)
         {
             var groupId = ((SampleDataGroup)e.ClickedItem).UniqueId;
-            if (!Frame.Navigate(typeof(SectionPage), groupId))
+            param.ParamGroupe = groupId;
+            if (!Frame.Navigate(typeof(SectionPage), param))
             {
                 throw new Exception(this.resourceLoader.GetString("NavigationFailedExceptionMessage"));
             }
@@ -120,7 +124,8 @@ namespace App_Judo
             // Accédez à la page de destination souhaitée, puis configurez la nouvelle page
             // en transmettant les informations requises en tant que paramètre de navigation.
             var itemId = ((SampleDataItems)e.ClickedItem).UniqueId;
-            if (!Frame.Navigate(typeof(ItemPage), itemId))
+            param.ParamGroupe = itemId;
+            if (!Frame.Navigate(typeof(ItemPage), param))
             {
                 throw new Exception(this.resourceLoader.GetString("NavigationFailedExceptionMessage"));
             }
