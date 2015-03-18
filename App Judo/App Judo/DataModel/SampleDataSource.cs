@@ -142,6 +142,16 @@ namespace App_Judo.Data
         }
 
 
+        public static async Task<SampleDataTech> GetTechAsync(string uniqueId)
+        {
+            await _sampleDataSource.GetSampleDataAsync();
+            // Une simple recherche linéaire est acceptable pour les petits groupes de données
+            var matches = _sampleDataSource.Groups.SelectMany(group => group.Items.SelectMany(item => item.Item)).Where((itemt) => itemt.UniqueId.Equals(uniqueId));
+            if (matches.Count() == 1) return matches.First();
+            return null;
+        }
+
+
         private async Task GetSampleDataAsync()
         {
             if (this._groups.Count != 0)
