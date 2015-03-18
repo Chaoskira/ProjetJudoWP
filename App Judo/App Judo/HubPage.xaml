@@ -91,6 +91,21 @@
                     </ListView>
                 </DataTemplate>
             </HubSection>
+            <HubSection x:Uid="HubSection3" Header="Recherche"
+                        DataContext="{Binding Groups[3]}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+                <DataTemplate>
+
+                    <Grid>
+
+                        <TextBox Name="SearchBar" HorizontalAlignment="Left" Margin="3,30,0,0" TextWrapping="Wrap" PlaceholderText="..." VerticalAlignment="Top" Height="36" Width="319" RenderTransformOrigin="0.48,-2.199" TextChanged="SearchBar_TextChanged"/>
+
+                        <Button Content="Valider" HorizontalAlignment="Left" Margin="3,80,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.367,-2.865" Background="Black" Tapped="Search_Click"/>
+
+                    </Grid>
+
+                </DataTemplate>
+            </HubSection>
         </Hub>
+
     </Grid>
 </Page>

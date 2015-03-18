@@ -20,6 +20,8 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
+
+
 // Pour en savoir plus sur le modèle Application Hub, consultez la page http://go.microsoft.com/fwlink/?LinkId=391641
 
 namespace App_Judo
@@ -32,6 +34,9 @@ namespace App_Judo
         private readonly NavigationHelper navigationHelper;
         private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
         private readonly ResourceLoader resourceLoader = ResourceLoader.GetForCurrentView("Resources");
+
+        private String research;
+       
 
         public HubPage()
         {
@@ -121,6 +126,23 @@ namespace App_Judo
             }
         }
 
+        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox temp_textBox = sender as TextBox;
+
+            research = temp_textBox.Text;
+
+        }
+
+
+        private void Search_Click(object sender, RoutedEventArgs e)
+        {
+
+            Frame.Navigate(typeof(SearchResultPage), research);
+
+            
+        }
+
         #region Inscription de NavigationHelper
 
         /// <summary>
@@ -146,5 +168,10 @@ namespace App_Judo
         }
 
         #endregion
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
