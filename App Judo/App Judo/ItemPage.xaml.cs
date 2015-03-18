@@ -69,7 +69,7 @@ namespace App_Judo
         private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
             // TODO: créez un modèle de données approprié pour le domaine posant problème pour remplacer les exemples de données
-            var item = await SampleDataSource.GetItemAsync((string)e.NavigationParameter);
+            var item = await SampleDataSource.GetTechAsync((string)e.NavigationParameter);
             this.DefaultViewModel["Group"] = item;
         }
 
