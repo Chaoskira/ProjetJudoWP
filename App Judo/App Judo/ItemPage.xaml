@@ -47,7 +47,7 @@
             <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Items[0].Title}" VerticalAlignment="Top" Margin="40,164,0,0"/>
             <TextBlock FontSize="17" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ceinture Requise : " VerticalAlignment="Top" Margin="10,40,0,0" Height="25" Width="135"/>
             <TextBlock FontSize="17" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Description : " VerticalAlignment="Top" Margin="10,460,0,0" RenderTransformOrigin="0.185,0.511"/>
-            <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="40,499,0,-199" Height="257" Width="286"/>
+            <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Items[0].SousItems[0].Description}" VerticalAlignment="Top" Margin="40,499,0,-199" Height="257" Width="286"/>
         </Grid>
         <Image Source="Assets\DarkGray.png" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="170" Margin="211,21.667,0,0" Grid.Row="1"/>
         <MediaElement HorizontalAlignment="Left" Height="181" VerticalAlignment="Top" Width="292" RenderTransformOrigin="1.44,4.161" Margin="57,267.667,0,0" Grid.Row="1"/>
