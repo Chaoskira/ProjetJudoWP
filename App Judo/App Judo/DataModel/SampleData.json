@@ -39,8 +39,8 @@
                         {
                             "UniqueId": "Group-1-Item-2-It-1",
                             "Title": "Kuzure-kesa-gatame",
-                            "Traduction": "toto",
-                            "Subtitle": "Immobilisation",
+                            "Traduction": "Variante de Hon gesa gatame",
+                            "Subtitle": "Variante de Hon gesa gatame",
                             "ImagePath": "Assets/LightGray.png",
                             "VideoPath":  "",
                             "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
@@ -49,8 +49,8 @@
                         {
                             "UniqueId": "Group-1-Item-2-It-2",
                             "Title": "Kuzure-kami-shiho-gatame",
-                            "Traduction": "toto",
-                            "Subtitle": "Immobilisation",
+                            "Traduction": "Variante de controle arriere par quatre points",
+                            "Subtitle": "Variante de controle arriere par quatre points",
                             "ImagePath": "Assets/LightGray.png",
                             "VideoPath":  "",
                             "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
@@ -59,8 +59,18 @@
                         {
                             "UniqueId": "Group-1-Item-2-It-3",
                             "Title": "Kata-gatame",
-                            "Traduction": "toto",
-                            "Subtitle": "Immobilisation",
+                            "Traduction": "Controle latero-costal (variante) par le bras et la tete",
+                            "Subtitle": "Controle latero-costal (variante) par le bras et la tete",
+                            "ImagePath": "Assets/LightGray.png",
+                            "VideoPath": "",
+                            "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                            "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
+                        },
+                        {
+                            "UniqueId": "Group-1-Item-2-It-4",
+                            "Title": "Makura gesa gatame",
+                            "Traduction": "Controle par le travers",
+                            "Subtitle": "Controle par le travers",
                             "ImagePath": "Assets/LightGray.png",
                             "VideoPath":  "",
                             "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
@@ -79,8 +89,8 @@
                         {
                             "UniqueId": "Group-1-Item-3-It-1",
                             "Title": "tsurikomi-goshi",
-                            "Traduction": "toto",
-                            "Subtitle": "Projections hanches",
+                            "Traduction": "Projection de hanche en pechant",
+                            "Subtitle": "Projection de hanche en pechant",
                             "ImagePath": "Assets/LightGray.png",
                             "VideoPath":  "",
                             "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
@@ -89,8 +99,8 @@
                         {
                             "UniqueId": "Group-1-Item-3-It-2",
                             "Title": "Harai-goshi",
-                            "Traduction": "toto",
-                            "Subtitle": "Projections hanches",
+                            "Traduction": "Balayage de hanche",
+                            "Subtitle": "Balayage de hanche",
                             "ImagePath": "Assets/LightGray.png",
                             "VideoPath":  "",
                             "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
@@ -99,8 +109,8 @@
                         {
                             "UniqueId": "Group-1-Item-3-It-3",
                             "Title": "Sode-tsurikomi-goshi",
-                            "Traduction": "toto",
-                            "Subtitle": "Projections hanches",
+                            "Traduction": "Hanche pechee avec la manche",
+                            "Subtitle": "Hanche pechee avec la manche",
                             "ImagePath": "Assets/LightGray.png",
                             "VideoPath":  "",
                             "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
@@ -119,8 +129,8 @@
                         {
                             "UniqueId": "Group-1-Item-4-It-1",
                             "Title": "Sasae-tsurikomi-ashi",
-                            "Traduction": "toto",
-                            "Subtitle": "Projections pieds / jambes",
+                            "Traduction": "Blocage du pied en pechant ",
+                            "Subtitle": "Blocage du pied en pechant",
                             "ImagePath": "Assets/LightGray.png",
                             "VideoPath":  "",
                             "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
@@ -129,8 +139,8 @@
                         {
                             "UniqueId": "Group-1-Item-4-It-2",
                             "Title": "Ouchi-gari",
-                            "Traduction": "toto",
-                            "Subtitle": "Projections pieds / jambes",
+                            "Traduction": "Grand fauchage interieur ",
+                            "Subtitle": "Grand fauchage interieur ",
                             "ImagePath": "Assets/LightGray.png",
                             "VideoPath":  "",
                             "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
@@ -139,8 +149,8 @@
                         {
                             "UniqueId": "Group-1-Item-4-It-3",
                             "Title": "Kouchi-gari",
-                            "Traduction": "toto",
-                            "Subtitle": "Projections pieds / jambes",
+                            "Traduction": "Petit fauchage interieur ",
+                            "Subtitle": "Petit fauchage interieur",
                             "ImagePath": "Assets/LightGray.png",
                             "VideoPath":  "",
                             "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
@@ -299,23 +309,144 @@
                         {
                             "UniqueId": "Group-3-Item-1-It-1",
                             "Title": "Kata-guruma",
-                            "Traduction": "toto",
-                            "Subtitle": "Projections main / epaule",
+                            "Traduction": "Roue autour des epaules",
+                            "Subtitle": "Roue autour des epaules",
                             "ImagePath": "Assets/LightGray.png",
-                            "VideoPath":  "",
+                            "VideoPath": "",
                             "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
                             "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
                         },
                         {
                             "UniqueId": "Group-3-Item-1-It-2",
-                            "Title": "Te-wa",
-                            "Traduction": "toto",
-                            "Subtitle": "Projections main / epaule",
+                            "Title": "Uki-Otoshi",
+                            "Traduction": "Projection flottee",
+                            "Subtitle": "Projection flottee ",
                             "ImagePath": "Assets/LightGray.png",
-                            "VideoPath":  "",
+                            "VideoPath": "",
                             "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
                             "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus te"
                         }
+                    ]
+                },
+                {
+                    "UniqueId": "Group-3-Item-2",
+                    "Title": "Ashi-waza",
+                    "Subtitle": "Projections pieds / jambes",
+                    "ImagePath": "Assets/categories/ashi-waza.jpg",
+                    "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula, urna sapien ultrices velit, nec venenatis dui odio in augue. Cras posuere, enim a cursus convallis, neque turpis malesuada erat, ut adipiscing neque tortor ac erat.",
+                    "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat",
+                    "SousItems": [
+                        {
+                            "UniqueId": "Group-3-Item-2-It-1",
+                            "Title": "Kosoto-gake",
+                            "Traduction": "Petit accrochage exterieur ",
+                            "Subtitle": "Petit accrochage exterieur ",
+                            "ImagePath": "Assets/LightGray.png",
+                            "VideoPath": "",
+                            "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                            "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
+                        },
+                        {
+                            "UniqueId": "Group-3-Item-2-It-2",
+                            "Title": "Ashi-guruma",
+                            "Traduction": "Roue autour de la jambe ",
+                            "Subtitle": "Roue autour de la jambe",
+                            "ImagePath": "Assets/LightGray.png",
+                            "VideoPath": "",
+                            "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                            "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
+                        }
+                    ]
+                },
+                {
+                    "UniqueId": "Group-3-Item-3",
+                    "Title": "Masutemi-waza",
+                    "Subtitle": "???",
+                    "ImagePath": "Assets/categories/ashi-waza.jpg",
+                    "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula, urna sapien ultrices velit, nec venenatis dui odio in augue. Cras posuere, enim a cursus convallis, neque turpis malesuada erat, ut adipiscing neque tortor ac erat.",
+                    "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat",
+                    "SousItems": [
+                        {
+                            "UniqueId": "Group-3-Item-3-It-1",
+                            "Title": "Tomoe-nage",
+                            "Traduction": "Projection en cercle ",
+                            "Subtitle": "Projection en cercle ",
+                            "ImagePath": "Assets/LightGray.png",
+                            "VideoPath": "",
+                            "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                            "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
+                        }
+                    ]
+                },
+                {
+                    "UniqueId": "Group-3-Item-4",
+                    "Title": "Shime-waza ",
+                    "Subtitle": "Etranglements",
+                    "ImagePath": "Assets/categories/ashi-waza.jpg",
+                    "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula, urna sapien ultrices velit, nec venenatis dui odio in augue. Cras posuere, enim a cursus convallis, neque turpis malesuada erat, ut adipiscing neque tortor ac erat.",
+                    "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat\n\nCurabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat",
+                    "SousItems": [
+                        {
+                            "UniqueId": "Group-3-Item-4-It-1",
+                            "Title": "Nami-juji-jime",
+                            "Traduction": "Etranglement en croix normal",
+                            "Subtitle": "Etranglement en croix normal",
+                            "ImagePath": "Assets/LightGray.png",
+                            "VideoPath": "",
+                            "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                            "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
+                        },
+                        {
+                            "UniqueId": "Group-3-Item-4-It-2",
+                            "Title": "Gyaku-juji-jime",
+                            "Traduction": "Etranglement croise facial paumes vers le haut",
+                            "Subtitle": "Etranglement croise facial paumes vers le haut",
+                            "ImagePath": "Assets/LightGray.png",
+                            "VideoPath": "",
+                            "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                            "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
+                        },
+                        {
+                            "UniqueId": "Group-3-Item-4-It-3",
+                            "Title": "Kata-juji-jime",
+                            "Traduction": "Etranglement croise facial d'un cote",
+                            "Subtitle": "Etranglement croise facial d'un cote",
+                            "ImagePath": "Assets/LightGray.png",
+                            "VideoPath": "",
+                            "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                            "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
+                        },
+                        {
+                            "UniqueId": "Group-3-Item-4-It-4",
+                            "Title": "Hadaka-jime",
+                            "Traduction": "Etranglement a mains nues",
+                            "Subtitle": "Etranglement a mains nues",
+                            "ImagePath": "Assets/LightGray.png",
+                            "VideoPath": "",
+                            "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                            "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
+                        },
+                        {
+                            "UniqueId": "Group-3-Item-4-It-5",
+                            "Title": "Okuri-eri-jime",
+                            "Traduction": "Etranglement avec les deux revers",
+                            "Subtitle": "Etranglement avec les deux revers",
+                            "ImagePath": "Assets/LightGray.png",
+                            "VideoPath": "",
+                            "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                            "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
+                        },
+                        {                        
+                            "UniqueId": "Group-3-Item-4-It-5",
+                            "Title": "Kata-ha-jime",
+                            "Traduction": "Etranglement par controle de l'epaule",
+                            "Subtitle": "Etranglement par controle de l'epaule",
+                            "ImagePath": "Assets/LightGray.png",
+                            "VideoPath":  "",
+                            "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                            "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
+                        }
+
                     ]
                 }
             ]
