@@ -406,17 +406,46 @@
                             "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
                             "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
                         },
-                        {                        
-                            "UniqueId": "Group-3-Item-4-It-5",
+                        {
+                            "UniqueId": "Group-3-Item-4-It-6",
                             "Title": "Kata-ha-jime",
                             "Traduction": "Etranglement par controle de l'epaule",
                             "Subtitle": "Etranglement par controle de l'epaule",
+                            "ImagePath": "Assets/LightGray.png",
+                            "VideoPath": "",
+                            "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                            "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
+                        },
+                        {                        
+                            "UniqueId": "Group-3-Item-4-It-7",
+                            "Title": "Sode-guruma-jime",
+                            "Traduction": "Etranglement par enroulement du revers",
+                            "Subtitle": "Etranglement par enroulement du revers",
+                            "ImagePath": "Assets/LightGray.png",
+                            "VideoPath":  "",
+                            "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                            "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
+                        },
+                        {
+                            "UniqueId": "Group-3-Item-4-It-8",
+                            "Title": "Kata-te-jime",
+                            "Traduction": "Etranglement d'une main",
+                            "Subtitle": "Etranglement d'une main",
+                            "ImagePath": "Assets/LightGray.png",
+                            "VideoPath": "",
+                            "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                            "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
+                        },
+                        {                        
+                            "UniqueId": "Group-3-Item-4-It-9",
+                            "Title": "Kata-te-jime",
+                            "Traduction": "Etranglement a deux mains",
+                            "Subtitle": "Etranglement a deux mains",
                             "ImagePath": "Assets/LightGray.png",
                             "VideoPath":  "",
                             "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
                             "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
                         }
-
                     ]
                 }
             ]
