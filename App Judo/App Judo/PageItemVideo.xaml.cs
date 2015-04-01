@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.ApplicationModel.Resources;
+using System.Windows.Input;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
@@ -17,22 +17,28 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// Pour en savoir plus sur le modèle Application Hub, consultez la page http://go.microsoft.com/fwlink/?LinkId=391641
+
+// Pour en savoir plus sur le modèle Application Hub, consultez la page http://go.microsoft.com/fwlink/?LinkID=391641
 
 namespace App_Judo
 {
-    public sealed partial class TechniPage : Page
+    /// <summary>
+    /// Page qui affiche les détails d'un élément appartenant à un groupe.
+    /// </summary>
+    public sealed partial class PageItemVideo : Page
     {
         private readonly NavigationHelper navigationHelper;
         private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
         ParametreNavigate param = new ParametreNavigate();
-        public TechniPage()
+        public PageItemVideo()
         {
             this.InitializeComponent();
 
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
+            //Video.Play();
+            
         }
 
         /// <summary>
@@ -57,7 +63,7 @@ namespace App_Judo
         /// fourni lorsqu'une page est recréée à partir d'une session antérieure.
         /// </summary>
         /// <param name="sender">
-        /// La source de l'événement ; en général <see cref="NavigationHelper"/>
+        /// La source de l'événement, en général <see cref="NavigationHelper"/>.
         /// </param>
         /// <param name="e">Données d'événement qui fournissent le paramètre de navigation transmis à
         /// <see cref="Frame.Navigate(Type, Object)"/> lors de la requête initiale de cette page et
@@ -65,14 +71,17 @@ namespace App_Judo
         /// antérieure.  L'état n'aura pas la valeur Null lors de la première visite de la page.</param>
         private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
+            // TODO: créez un modèle de données approprié pour le domaine posant problème pour remplacer les exemples de données
             param = (ParametreNavigate)e.NavigationParameter;
-            // TODO: créer un modèle de données approprié pour le domaine posant problème afin de remplacer les exemples de données.
-            //var group = await SampleDataSource.GetGroupAsync((string)e.NavigationParameter);
+
             var group = await SampleDataSource.GetGroupAsync(param.ParamGroupe);
-            this.DefaultViewModel["Group"] = group;  
+            this.DefaultViewModel["Group"] = group;
 
             var item = await SampleDataSource.GetItemAsync(param.ParamItem);
-            this.DefaultViewModel["Item"] = item;           
+            this.DefaultViewModel["Item"] = item;
+
+            var sousItem = await SampleDataSource.GetTechAsync(param.ParamSousItem);
+            this.DefaultViewModel["SousItem"] = sousItem;
         }
 
         /// <summary>
@@ -80,39 +89,12 @@ namespace App_Judo
         /// suppression de la page du cache de navigation.  Les valeurs doivent être conformes aux
         /// exigences en matière de sérialisation de <see cref="SuspensionManager.SessionState"/>.
         /// </summary>
-        /// <param name="sender">La source de l'événement ; en général <see cref="NavigationHelper"/></param>
+        /// <param name="sender">La source de l'événement, en général <see cref="NavigationHelper"/>.</param>
         /// <param name="e">Données d'événement qui fournissent un dictionnaire vide à remplir à l'aide de l'
         /// état sérialisable.</param>
         private void NavigationHelper_SaveState(object sender, SaveStateEventArgs e)
         {
             // TODO: enregistrer l'état unique de la page ici.
-        }
-
-        /// <summary>
-        /// Affiche les détails d'un élément sur lequel l'utilisateur a cliqué dans <see cref="ItemPage"/>.
-        /// </summary>
-        /// <param name="sender">GridView qui affiche l'élément sur lequel l'utilisateur a cliqué.</param>
-        /// <param name="e">Données d'événement décrivant l'élément sur lequel l'utilisateur a cliqué.</param>
-        private void ItemView_ItemClick(object sender, ItemClickEventArgs e)
-        {            
-            var sousItemId = ((SampleDataTech)e.ClickedItem).UniqueId;
-            param.ParamSousItem = sousItemId;
-            if (sousItemId == "Group-1-Item-1-It-2")
-            {
-                if (!Frame.Navigate(typeof(PageItemVideo), param))
-                {
-                    var resourceLoader = ResourceLoader.GetForCurrentView("Resources");
-                    throw new Exception(resourceLoader.GetString("NavigationFailedExceptionMessage"));
-                }
-            }
-            else
-            {
-                if (!Frame.Navigate(typeof(ItemPage), param))
-                {
-                    var resourceLoader = ResourceLoader.GetForCurrentView("Resources");
-                    throw new Exception(resourceLoader.GetString("NavigationFailedExceptionMessage"));
-                }
-            }
         }
 
         #region Inscription de NavigationHelper
@@ -128,7 +110,8 @@ namespace App_Judo
         /// en plus de l'état de page conservé durant une session antérieure.
         /// </para>
         /// </summary>
-        /// <param name="e">Données d'événement décrivant la manière dont l'utilisateur a accédé à cette page.</param>
+        /// <param name="e">Fournit des données pour les méthodes de navigation et
+        /// les gestionnaires d'événements qui ne peuvent pas annuler la requête de navigation.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedTo(e);
@@ -140,5 +123,39 @@ namespace App_Judo
         }
 
         #endregion
+
+        void Play_Click(object sender, RoutedEventArgs e)
+        {
+            media.Source = new Uri("http://cespage.com/bear.wmv", UriKind.Absolute);
+            media.Play();
+        }
+
+        void Pause_Click(object sender, RoutedEventArgs e)
+        {
+            if (media.CanPause)
+            {
+                media.Pause();
+            }
+        }
+
+        void Stop_Click(object sender, RoutedEventArgs e)
+        {
+            media.Stop();
+        }
+
+        void Media_MediaFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+            // Handle failed media event
+        }
+
+        void Media_MediaOpened(object sender, RoutedEventArgs e)
+        {
+            // Handle open media event
+        }
+
+        void Media_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            // Handle media ended event
+        }
     }
 }

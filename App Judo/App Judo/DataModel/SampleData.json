@@ -4,7 +4,7 @@
             "UniqueId": "Group-1",
             "Title": "Ceinture Jaune",
             "Subtitle": "",
-            "ImagePath": "Assets/jaune.png",
+            "ImagePath": "Assets/ceintures/jaune.png",
             "Desc": "",
             "Description": "",
             "Items": [
@@ -18,7 +18,17 @@
                     "SousItems": [
                         {
                             "UniqueId": "Group-1-Item-1-It-1",
-                            "Title": "Seoi-nage",
+                            "Title": "Seoi-nage-GIF",
+                            "Traduction": "toto",
+                            "Subtitle": "Projections main / epaule",
+                            "ImagePath": "Assets/LightGray.png",
+                            "VideoPath": "",
+                            "Description": "Item Description: Pellentesque porta, mauris quis interdum vehicula",
+                            "Content": "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus "
+                        },
+                        {
+                            "UniqueId": "Group-1-Item-1-It-2",
+                            "Title": "Seoi-nage-VIDEO",
                             "Traduction": "toto",
                             "Subtitle": "Projections main / epaule",
                             "ImagePath": "Assets/LightGray.png",
@@ -164,7 +174,7 @@
             "UniqueId": "Group-2",
             "Title": "Ceinture Orange",
             "Subtitle": "",
-            "ImagePath": "Assets/orange.png",
+            "ImagePath": "Assets/ceintures/orange.png",
             "Desc": "",
             "Description": "",
             "Items": [
@@ -264,7 +274,7 @@
             "UniqueId": "Group-3",
             "Title": "Ceinture Verte",
             "Subtitle": "",
-            "ImagePath": "Assets/verte.png",
+            "ImagePath": "Assets/ceintures/verte.png",
             "Desc": "",
             "Description": "",
             "Items": [
@@ -454,7 +464,7 @@
             "UniqueId": "Group-4",
             "Title": "Ceinture Bleue",
             "Subtitle": "",
-            "ImagePath": "Assets/bleue.png",
+            "ImagePath": "Assets/ceintures/bleue.png",
             "Desc": "",
             "Description": "",
             "Items": [
@@ -494,7 +504,7 @@
             "UniqueId": "Group-5",
             "Title": "Ceinture Marron",
             "Subtitle": "",
-            "ImagePath": "Assets/marron.png",
+            "ImagePath": "Assets/ceinture/marron.png",
             "Desc": "",
             "Description": "",
             "Items": [
