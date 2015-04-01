@@ -50,7 +50,7 @@ namespace App_Judo.Data
 
     public class SampleDataTech
     {
-        public SampleDataTech(String uniqueId, String title, String traduction, String subtitle, String imagePath, String description)
+        public SampleDataTech(String uniqueId, String title, String traduction, String subtitle, String imagePath, String videoPath ,String description)
         {
             this.UniqueId = uniqueId;
             this.Title = title;
@@ -58,6 +58,7 @@ namespace App_Judo.Data
             this.Subtitle = subtitle;
             this.Description = description;
             this.ImagePath = imagePath;
+            this.VideoPath = videoPath;
         }
 
         public string UniqueId { get; private set; }
@@ -67,6 +68,7 @@ namespace App_Judo.Data
         public string Description { get; private set; }
         public string ImagePath { get; private set; }
         public string Content { get; private set; }
+        public string VideoPath { get; private set; }
 
         public override string ToString()
         {
@@ -195,6 +197,7 @@ namespace App_Judo.Data
                                                            SouItemObject["Traduction"].GetString(),
                                                            SouItemObject["Subtitle"].GetString(),
                                                            SouItemObject["ImagePath"].GetString(),
+                                                           SouItemObject["VideoPath"].GetString(),
                                                            SouItemObject["Description"].GetString()));
                         //group.Items[group.Items.Count - 1].Item.Add(new SampleDataTech("a", "b", "c", "Assets/LightGray.png", "e"));
                     }
