@@ -112,6 +112,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\bleue.png" />
+    <Content Include="Assets\categories\ashi-waza.jpg" />
+    <Content Include="Assets\categories\kansetsu-waza.jpg" />
+    <Content Include="Assets\categories\koshi-waza.jpg" />
+    <Content Include="Assets\categories\masutemi-waza.jpg" />
+    <Content Include="Assets\categories\osaekomi-waza.jpg" />
+    <Content Include="Assets\categories\shime-waza.jpg" />
+    <Content Include="Assets\categories\te-waza.jpg" />
     <Content Include="Assets\DarkGray.png" />
     <Content Include="Assets\jaune.png" />
     <Content Include="Assets\LightGray.png" />
@@ -159,6 +166,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
