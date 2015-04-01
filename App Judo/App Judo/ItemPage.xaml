@@ -6,10 +6,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:data="using:App_Judo.Data"
+      xmlns:gif="using:XamlAnimatedGif"
+    
     mc:Ignorable="d"
     DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
     d:DataContext="{Binding , Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
     <Page.Transitions>
         <TransitionCollection>
             <NavigationThemeTransition>
@@ -50,6 +53,7 @@
             <TextBlock FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding SousItem.Description}" VerticalAlignment="Top" Margin="40,499,0,-199" Height="257" Width="286"/>
         </Grid>
         <Image Source="{Binding SousItem.ImagePath}" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="170" Margin="211,21.667,0,0" Grid.Row="1"/>
-        <MediaElement HorizontalAlignment="Left" Height="181" VerticalAlignment="Top" Width="292" RenderTransformOrigin="1.44,4.161" Margin="57,267.667,0,0" Grid.Row="1"/>
+        <!--<MediaElement HorizontalAlignment="Left" Height="181" VerticalAlignment="Top" Width="292" RenderTransformOrigin="1.44,4.161" Margin="57,267.667,0,0" Grid.Row="1"/>-->
+        <Image HorizontalAlignment="Center" gif:AnimationBehavior.SourceUri="Assets/video_gif/ABC.gif" Width="350" Margin="0,75,0,0" Grid.Row="1" />
     </Grid>
 </Page>
