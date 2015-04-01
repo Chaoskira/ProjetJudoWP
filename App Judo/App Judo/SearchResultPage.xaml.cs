@@ -17,6 +17,46 @@ using Windows.UI.Xaml.Navigation;
 
 namespace App_Judo
 {
+
+
+
+    public class SousItem
+    {
+        public string UniqueId { get; set; }
+        public string Title { get; set; }
+        public string Traduction { get; set; }
+        public string Subtitle { get; set; }
+        public string ImagePath { get; set; }
+        public string Description { get; set; }
+        public string Content { get; set; }
+    }
+
+    public class Item
+    {
+        public string UniqueId { get; set; }
+        public string Title { get; set; }
+        public string Subtitle { get; set; }
+        public string ImagePath { get; set; }
+        public string Description { get; set; }
+        public string Content { get; set; }
+        public List<SousItem> SousItems { get; set; }
+    }
+
+    public class Group
+    {
+        public string UniqueId { get; set; }
+        public string Title { get; set; }
+        public string Subtitle { get; set; }
+        public string ImagePath { get; set; }
+        public string Desc { get; set; }
+        public string Description { get; set; }
+        public List<Item> Items { get; set; }
+    }
+
+    public class RootObject
+    {
+        public List<Group> Groups { get; set; }
+    }
     /// <summary>
     /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
     /// </summary>
