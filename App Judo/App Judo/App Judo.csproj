@@ -119,9 +119,11 @@
     <Content Include="Assets\categories\osaekomi-waza.jpg" />
     <Content Include="Assets\categories\shime-waza.jpg" />
     <Content Include="Assets\categories\te-waza.jpg" />
+    <Content Include="Assets\categories\yokosutemi-waza.jpg" />
     <Content Include="Assets\DarkGray.png" />
     <Content Include="Assets\jaune.png" />
     <Content Include="Assets\LightGray.png" />
+    <Content Include="Assets\marron.png" />
     <Content Include="Assets\MediumGray.png" />
     <Content Include="Assets\HubBackground.theme-dark.png" />
     <Content Include="Assets\HubBackground.theme-light.png" />
