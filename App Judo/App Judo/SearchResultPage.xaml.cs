@@ -49,6 +49,8 @@ namespace App_Judo
 
                 // Change property of destination page
                 search.Text = data;
+
+                search.Text = "\"" + data + "\"";
             
 
         }
