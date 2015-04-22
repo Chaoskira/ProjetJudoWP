@@ -10,8 +10,7 @@
                     "SousItems": [
                         {
                             "UniqueId": "Group-1-Item-1",
-                            "Ceinture": "Ceinture Jaune",
-                            "CeintureImagePath": "Assets/ceintures/jaune.png",
+                            "Ceinture": "Jaune",
                             "Title": "Seoi-nage",
                             "Traduction": "toto",
                             "Subtitle": "Projections main / epaule",
@@ -23,8 +22,7 @@
                         },
                         {
                             "UniqueId": "Group-1-Item-2",
-                            "Ceinture": "Ceinture Orange",
-                            "CeintureImagePath": "Assets/ceintures/orange.png",
+                            "Ceinture": "Orange",
                             "Title": "Tai-Otoshi",
                             "Traduction": "Renversement du corps",
                             "Subtitle": "Renversement du corps",
@@ -36,8 +34,7 @@
                         },
                         {
                             "UniqueId": "Group-1-Item-2",
-                            "Ceinture": "Ceinture Verte",
-                            "CeintureImagePath": "Assets/ceintures/orange.png",
+                            "Ceinture": "Verte",
                             "Title": "Kata-guruma",
                             "Traduction": "Roue autour des epaules",
                             "Subtitle": "Roue autour des epaules",
@@ -50,7 +47,6 @@
                         {
                             "UniqueId": "Group-1-Item-3",
                             "Ceinture": "Ceinture Verte",
-                            "CeintureImagePath": "Assets/ceintures/orange.png",
                             "Title": "Uki-Otoshi",
                             "Traduction": "Projection flottee",
                             "Subtitle": "Projection flottee ",
@@ -63,7 +59,6 @@
                         {
                             "UniqueId": "Group-1-Item-4",
                             "Ceinture": "Ceinture Bleue",
-                            "CeintureImagePath": "Assets/ceintures/bleue.png",
                             "Title": "Te-te",
                             "Traduction": "toto",
                             "Subtitle": "Projections main / epaule",
@@ -76,7 +71,6 @@
                         {
                             "UniqueId": "Group-1-Item-5",
                             "Ceinture": "Ceinture Bleue",
-                            "CeintureImagePath": "Assets/ceintures/bleue.png",
                             "Title": "Te-wa",
                             "Traduction": "toto",
                             "Subtitle": "Projections main / epaule",
@@ -89,7 +83,6 @@
                         {
                             "UniqueId": "Group-1-Item-6",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Title": "Seoi-otoshi",
                             "Traduction": "renversement par l'epaule",
                             "Subtitle": "renversement par l'epaule",
@@ -102,7 +95,6 @@
                         {
                             "UniqueId": "Group-1-Item-7",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Title": "Morote-gari",
                             "Traduction": "fauchage par les mains",
                             "Subtitle": "fauchage par les mains",
@@ -115,7 +107,6 @@
                         {
                             "UniqueId": "Group-1-Item-8",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Title": "Sukui-nage",
                             "Traduction": "Projection en cuillere",
                             "Subtitle": "Projection en cuillere",
@@ -128,7 +119,6 @@
                         {
                             "UniqueId": "Group-1-Item-9",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Title": "Sumi-otoshi",
                             "Traduction": "Chute dans l'angle",
                             "Subtitle": "Chute dans l'angle",
@@ -151,7 +141,6 @@
                         {
                             "UniqueId": "Group-2-Item-1",
                             "Ceinture": "Ceinture Jaune",
-                            "CeintureImagePath": "Assets/ceintures/jaune.png",
                             "Title": "tsurikomi-goshi",
                             "Traduction": "Projection de hanche en pechant",
                             "Subtitle": "Projection de hanche en pechant",
@@ -164,7 +153,6 @@
                         {
                             "UniqueId": "Group-2-Item-2",
                             "Ceinture": "Ceinture Jaune",
-                            "CeintureImagePath": "Assets/ceintures/jaune.png",
                             "Title": "Harai-goshi",
                             "Traduction": "Balayage de hanche",
                             "Subtitle": "Balayage de hanche",
@@ -177,7 +165,6 @@
                         {
                             "UniqueId": "Group-2-Item-3",
                             "Ceinture": "Ceinture Jaune",
-                            "CeintureImagePath": "Assets/ceintures/jaune.png",
                             "Title": "Sode-tsurikomi-goshi",
                             "Traduction": "Hanche pechee avec la manche",
                             "Subtitle": "Hanche pechee avec la manche",
@@ -190,7 +177,6 @@
                         {
                             "UniqueId": "Group-2-Item-4",
                             "Ceinture": "Ceinture Orange",
-                            "CeintureImagePath": "Assets/ceintures/orange.png",
                             "Title": "Koshi-guruma",
                             "Traduction": "enroulement de la hanche",
                             "Subtitle": "enroulement de la hanche",
@@ -203,7 +189,6 @@
                         {
                             "UniqueId": "Group-2-Item-5",
                             "Ceinture": "Ceinture Orange",
-                            "CeintureImagePath": "Assets/ceintures/orange.png",
                             "Title": "Hane-goshi",
                             "Traduction": "Hanche percutee ou sautee",
                             "Subtitle": "Hanche percutee ou sautee",
@@ -216,7 +201,6 @@
                         {
                             "UniqueId": "Group-2-Item-3",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Title": "Utsuri-goshi",
                             "Traduction": "Contre en deplacant la hanche",
                             "Subtitle": "Contre en deplacant la hanche",
@@ -229,7 +213,6 @@
                         {
                             "UniqueId": "Group-2-Item-4",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Title": "Ushiro-goshi",
                             "Traduction": "Contre de hanche arriere",
                             "Subtitle": "Contre de hanche arriere",
@@ -252,7 +235,6 @@
                         {
                             "UniqueId": "Group-3-Item-1",
                             "Ceinture": "Ceinture Jaune",
-                            "CeintureImagePath": "Assets/ceintures/jaune.png",
                             "Title": "Sasae-tsurikomi-ashi",
                             "Traduction": "Blocage du pied en pechant ",
                             "Subtitle": "Blocage du pied en pechant",
@@ -265,7 +247,6 @@
                         {
                             "UniqueId": "Group-3-Item-2",
                             "Ceinture": "Ceinture Jaune",
-                            "CeintureImagePath": "Assets/ceintures/jaune.png",
                             "Title": "Ouchi-gari",
                             "Traduction": "Grand fauchage interieur ",
                             "Subtitle": "Grand fauchage interieur ",
@@ -278,7 +259,6 @@
                         {
                             "UniqueId": "Group-3-Item-3",
                             "Ceinture": "Ceinture Jaune",
-                            "CeintureImagePath": "Assets/ceintures/jaune.png",
                             "Title": "Kouchi-gari",
                             "Traduction": "Petit fauchage interieur ",
                             "Subtitle": "Petit fauchage interieur",
@@ -291,7 +271,6 @@
                         {
                             "UniqueId": "Group-3-Item-4",
                             "Ceinture": "Ceinture Orange",
-                            "CeintureImagePath": "Assets/ceintures/orange.png",
                             "Title": "Okuri-ashi-harai",
                             "Traduction": "Balayage des deux pieds ",
                             "Subtitle": "Balayage des deux pieds ",
@@ -304,7 +283,6 @@
                         {
                             "UniqueId": "Group-3-Item-5",
                             "Ceinture": "Ceinture Orange",
-                            "CeintureImagePath": "Assets/ceintures/orange.png",
                             "Title": "Uchi-mata",
                             "Traduction": "Fauchage interne de la cuisse",
                             "Subtitle": "Fauchage interne de la cuisse",
@@ -317,7 +295,6 @@
                         {
                             "UniqueId": "Group-3-Item-6",
                             "Ceinture": "Ceinture Orange",
-                            "CeintureImagePath": "Assets/ceintures/orange.png",
                             "Title": "Kosoto-gari",
                             "Traduction": "Petit fauchage exterieur",
                             "Subtitle": "Petit fauchage exterieur",
@@ -330,7 +307,6 @@
                         {
                             "UniqueId": "Group-3-Item-7",
                             "Ceinture": "Ceinture Verte",
-                            "CeintureImagePath": "Assets/ceintures/orange.png",
                             "Title": "Kosoto-gake",
                             "Traduction": "Petit accrochage exterieur ",
                             "Subtitle": "Petit accrochage exterieur ",
@@ -343,7 +319,6 @@
                         {
                             "UniqueId": "Group-3-Item-8",
                             "Ceinture": "Ceinture Verte",
-                            "CeintureImagePath": "Assets/ceintures/orange.png",
                             "Title": "Ashi-guruma",
                             "Traduction": "Roue autour de la jambe ",
                             "Subtitle": "Roue autour de la jambe",
@@ -356,7 +331,6 @@
                         {
                             "UniqueId": "Group-3-Item-9",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Title": "Osoto-guruma",
                             "Traduction": "grand enroulement par l'exterieur",
                             "Subtitle": "grand enroulement par l'exterieur",
@@ -379,7 +353,6 @@
                         {
                             "UniqueId": "Group-4-Item-1",
                             "Ceinture": "Ceinture Verte",
-                            "CeintureImagePath": "Assets/ceintures/orange.png",
                             "Title": "Tomoe-nage",
                             "Traduction": "Projection en cercle ",
                             "Subtitle": "Projection en cercle ",
@@ -392,7 +365,6 @@
                         {
                             "UniqueId": "Group-4-Item-2",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Title": "Sumi-gaeshi",
                             "Traduction": "Renversement dans l'angle",
                             "Subtitle": "Renversement dans l'angle",
@@ -405,7 +377,6 @@
                         {
                             "UniqueId": "Group-4-Item-3",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Title": "Ura-nage",
                             "Traduction": "Projection arriere",
                             "Subtitle": "Projection arriere",
@@ -418,7 +389,6 @@
                         {
                             "UniqueId": "Group-4-Item-4",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Title": "Hikikomi-gaeshi",
                             "Traduction": "Amener au sol",
                             "Subtitle": "Amener au sol",
@@ -441,7 +411,6 @@
                         {
                             "UniqueId": "Group-5-Item-1",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Title": "Yoko-otoshi",
                             "Traduction": "Sutemi lateral ",
                             "Subtitle": "Sutemi lateral ",
@@ -454,7 +423,6 @@
                         {
                             "UniqueId": "Group-5-Item-2",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Title": "Tani-otoshi",
                             "Traduction": "Chute dans la vallee",
                             "Subtitle": "Chute dans la vallee",
@@ -467,7 +435,6 @@
                         {
                             "UniqueId": "Group-5-Item-3",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Title": "Hane-makikomi",
                             "Traduction": "Hanche sautee et enroulee",
                             "Subtitle": "Hanche sautee et enroulee",
@@ -480,7 +447,6 @@
                         {
                             "UniqueId": "Group-5-Item-4",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Traduction": "Separation des corps",
                             "Subtitle": "Separation des corps",
                             "ImagePath": "Assets/LightGray.png",
@@ -492,7 +458,6 @@
                         {
                             "UniqueId": "Group-5-Item-5",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Title": "Yoko-guruma",
                             "Traduction": "Sutemi enroule par l'exterieur ",
                             "Subtitle": "Sutemi enroule par l'exterieur ",
@@ -505,7 +470,6 @@
                         {
                             "UniqueId": "Group-5-Item-6",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Title": "Yoko-gake",
                             "Traduction": "Accrochage lateral",
                             "Subtitle": "Accrochage lateral",
@@ -518,7 +482,6 @@
                         {
                             "UniqueId": "Group-5-Item-7",
                             "Ceinture": "Ceinture Marron",
-                            "CeintureImagePath": "Assets/ceintures/marron.png",
                             "Title": "Kani-basami",
                             "Traduction": "Pince de crabe",
                             "Subtitle": "Pince de crabe",
@@ -541,7 +504,6 @@
                         {
                             "UniqueId": "Group-6-Item-1",
                             "Ceinture": "Ceinture Jaune",
-                            "CeintureImagePath": "Assets/ceintures/jaune.png",
                             "Title": "Kuzure-kesa-gatame",
                             "Traduction": "Variante de Hon gesa gatame",
                             "Subtitle": "Variante de Hon gesa gatame",
@@ -554,7 +516,6 @@
                         {
                             "UniqueId": "Group-6-Item-2",
                             "Ceinture": "Ceinture Jaune",
-                            "CeintureImagePath": "Assets/ceintures/jaune.png",
                             "Title": "Kuzure-kami-shiho-gatame",
                             "Traduction": "Variante de controle arriere par quatre points",
                             "Subtitle": "Variante de controle arriere par quatre points",
@@ -567,7 +528,6 @@
                         {
                             "UniqueId": "Group-6-Item-3",
                             "Ceinture": "Ceinture Jaune",
-                            "CeintureImagePath": "Assets/ceintures/jaune.png",
                             "Title": "Kata-gatame",
                             "Traduction": "Controle latero-costal (variante) par le bras et la tete",
                             "Subtitle": "Controle latero-costal (variante) par le bras et la tete",
@@ -580,7 +540,6 @@
                         {
                             "UniqueId": "Group-6-Item-4",
                             "Ceinture": "Ceinture Jaune",
-                            "CeintureImagePath": "Assets/ceintures/jaune.png",
                             "Title": "Makura gesa gatame",
                             "Traduction": "Controle par le travers",
                             "Subtitle": "Controle par le travers",
@@ -603,7 +562,6 @@
                         {
                             "UniqueId": "Group-7-Item-1",
                             "Ceinture": "Ceinture Verte",
-                            "CeintureImagePath": "Assets/ceintures/verte.png",
                             "Title": "Nami-juji-jime",
                             "Traduction": "Etranglement en croix normal",
                             "Subtitle": "Etranglement en croix normal",
@@ -616,7 +574,6 @@
                         {
                             "UniqueId": "Group-7-Item-2",
                             "Ceinture": "Ceinture Verte",
-                            "CeintureImagePath": "Assets/ceintures/verte.png",
                             "Title": "Gyaku-juji-jime",
                             "Traduction": "Etranglement croise facial paumes vers le haut",
                             "Subtitle": "Etranglement croise facial paumes vers le haut",
@@ -629,7 +586,6 @@
                         {
                             "UniqueId": "Group-7-Item-3",
                             "Ceinture": "Ceinture Verte",
-                            "CeintureImagePath": "Assets/ceintures/verte.png",
                             "Title": "Kata-juji-jime",
                             "Traduction": "Etranglement croise facial d'un cote",
                             "Subtitle": "Etranglement croise facial d'un cote",
@@ -642,7 +598,6 @@
                         {
                             "UniqueId": "Group-8-Item-4",
                             "Ceinture": "Ceinture Verte",
-                            "CeintureImagePath": "Assets/ceintures/verte.png",
                             "Title": "Hadaka-jime",
                             "Traduction": "Etranglement a mains nues",
                             "Subtitle": "Etranglement a mains nues",
@@ -655,7 +610,6 @@
                         {
                             "UniqueId": "Group-8-Item-5",
                             "Ceinture": "Ceinture Verte",
-                            "CeintureImagePath": "Assets/ceintures/verte.png",
                             "Title": "Okuri-eri-jime",
                             "Traduction": "Etranglement avec les deux revers",
                             "Subtitle": "Etranglement avec les deux revers",
@@ -668,7 +622,6 @@
                         {
                             "UniqueId": "Group-8-Item-6",
                             "Ceinture": "Ceinture Verte",
-                            "CeintureImagePath": "Assets/ceintures/verte.png",
                             "Title": "Kata-ha-jime",
                             "Traduction": "Etranglement par controle de l'epaule",
                             "Subtitle": "Etranglement par controle de l'epaule",
@@ -681,7 +634,6 @@
                         {
                             "UniqueId": "Group-8-Item-7",
                             "Ceinture": "Ceinture Verte",
-                            "CeintureImagePath": "Assets/ceintures/verte.png",
                             "Title": "Sode-guruma-jime",
                             "Traduction": "Etranglement par enroulement du revers",
                             "Subtitle": "Etranglement par enroulement du revers",
@@ -694,7 +646,6 @@
                         {
                             "UniqueId": "Group-8-Item-8",
                             "Ceinture": "Ceinture Verte",
-                            "CeintureImagePath": "Assets/ceintures/verte.png",
                             "Title": "Kata-te-jime",
                             "Traduction": "Etranglement d'une main",
                             "Subtitle": "Etranglement d'une main",
@@ -707,7 +658,6 @@
                         {
                             "UniqueId": "Group-8-Item-9",
                             "Ceinture": "Ceinture Verte",
-                            "CeintureImagePath": "Assets/ceintures/verte.png",
                             "Title": "Kata-te-jime",
                             "Traduction": "Etranglement a deux mains",
                             "Subtitle": "Etranglement a deux mains",
