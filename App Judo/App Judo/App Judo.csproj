@@ -125,6 +125,12 @@
     <Content Include="Assets\categories\yokosutemi-waza.jpg" />
     <Content Include="Assets\DarkGray.png" />
     <Content Include="Assets\ceintures\jaune.png" />
+    <Content Include="Assets\ImageChargement.scale-100.png" />
+    <Content Include="Assets\ImageChargement.scale-140.png" />
+    <Content Include="Assets\ImageChargement.scale-240.png" />
+    <Content Include="Assets\ImageChargement1152x1920.png" />
+    <Content Include="Assets\ImageChargement480x800.png" />
+    <Content Include="Assets\ImageChargement672x1120.png" />
     <Content Include="Assets\LightGray.png" />
     <Content Include="Assets\marron.png" />
     <Content Include="Assets\MediumGray.png" />
