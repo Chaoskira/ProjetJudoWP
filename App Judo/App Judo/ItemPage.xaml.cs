@@ -29,7 +29,6 @@ namespace App_Judo
     {
         private readonly NavigationHelper navigationHelper;
         private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
-        ParametreNavigate param = new ParametreNavigate();
         public ItemPage()
         {
             this.InitializeComponent();
@@ -70,16 +69,9 @@ namespace App_Judo
         private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
             // TODO: créez un modèle de données approprié pour le domaine posant problème pour remplacer les exemples de données
-            param = (ParametreNavigate)e.NavigationParameter;
-
-            var group = await SampleDataSource.GetGroupAsync(param.ParamGroupe);
+            var group = await SampleDataSource.GetItemAsync((string)e.NavigationParameter);
             this.DefaultViewModel["Group"] = group;
 
-            var item = await SampleDataSource.GetItemAsync(param.ParamItem);
-            this.DefaultViewModel["Item"] = item;  
-
-            var sousItem = await SampleDataSource.GetTechAsync(param.ParamSousItem);
-            this.DefaultViewModel["SousItem"] = sousItem;
         }
 
         /// <summary>

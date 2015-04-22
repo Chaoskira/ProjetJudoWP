@@ -61,7 +61,7 @@
 
     <Grid x:Name="LayoutRoot">
         <Hub x:Name="Hub" x:Uid="Hub" Header="App Judo" Background="{ThemeResource HubBackgroundImageBrush}">
-            <HubSection x:Uid="HubSection1" Header="Prises par ceinture" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+            <HubSection x:Uid="HubSection1" Header="Prise par Famille" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
                 <DataTemplate>
                     <ListView 
                         AutomationProperties.AutomationId="ItemListViewSection3"
@@ -76,7 +76,7 @@
                 </DataTemplate>
             </HubSection>
 
-            <HubSection x:Uid="HubSection5" Header="Prises par famille"
+            <HubSection x:Uid="HubSection5" Header="Toutes les prises"
                         DataContext="{Binding Groups[3]}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
                 <DataTemplate>
                     <ListView 

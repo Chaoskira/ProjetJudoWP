@@ -25,7 +25,6 @@ namespace App_Judo
     {
         private readonly NavigationHelper navigationHelper;
         private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
-        ParametreNavigate param = new ParametreNavigate();
         public SectionPage()
         {
             this.InitializeComponent();
@@ -65,11 +64,9 @@ namespace App_Judo
         /// antérieure.  L'état n'aura pas la valeur Null lors de la première visite de la page.</param>
         private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
-
-            param = (ParametreNavigate)e.NavigationParameter;
             // TODO: créer un modèle de données approprié pour le domaine posant problème afin de remplacer les exemples de données.
             //var group = await SampleDataSource.GetGroupAsync((string)e.NavigationParameter);
-            var group = await SampleDataSource.GetGroupAsync(param.ParamGroupe);
+            var group = await SampleDataSource.GetGroupAsync((string)e.NavigationParameter);
             this.DefaultViewModel["Group"] = group;
         }
 
@@ -94,8 +91,7 @@ namespace App_Judo
         private void ItemView_ItemClick(object sender, ItemClickEventArgs e)
         {
             var itemId = ((SampleDataItems)e.ClickedItem).UniqueId;
-            param.ParamItem = itemId;
-            if (!Frame.Navigate(typeof(TechniPage), param))
+            if (!Frame.Navigate(typeof(TechniPage), itemId))
             {
                 var resourceLoader = ResourceLoader.GetForCurrentView("Resources");
                 throw new Exception(resourceLoader.GetString("NavigationFailedExceptionMessage"));

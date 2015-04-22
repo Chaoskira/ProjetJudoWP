@@ -25,7 +25,6 @@ namespace App_Judo
     {
         private readonly NavigationHelper navigationHelper;
         private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
-        ParametreNavigate param = new ParametreNavigate();
         public TechniPage()
         {
             this.InitializeComponent();
@@ -65,14 +64,10 @@ namespace App_Judo
         /// antérieure.  L'état n'aura pas la valeur Null lors de la première visite de la page.</param>
         private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
-            param = (ParametreNavigate)e.NavigationParameter;
             // TODO: créer un modèle de données approprié pour le domaine posant problème afin de remplacer les exemples de données.
             //var group = await SampleDataSource.GetGroupAsync((string)e.NavigationParameter);
-            var group = await SampleDataSource.GetGroupAsync(param.ParamGroupe);
-            this.DefaultViewModel["Group"] = group;  
-
-            var item = await SampleDataSource.GetItemAsync(param.ParamItem);
-            this.DefaultViewModel["Item"] = item;           
+            var group = await SampleDataSource.GetGroupAsync((string)e.NavigationParameter);
+            this.DefaultViewModel["Group"] = group;           
         }
 
         /// <summary>
@@ -95,24 +90,12 @@ namespace App_Judo
         /// <param name="e">Données d'événement décrivant l'élément sur lequel l'utilisateur a cliqué.</param>
         private void ItemView_ItemClick(object sender, ItemClickEventArgs e)
         {            
-            var sousItemId = ((SampleDataTech)e.ClickedItem).UniqueId;
-            param.ParamSousItem = sousItemId;
-            if (sousItemId == "Group-1-Item-1-It-2")
+            var ItemId = ((SampleDataItems)e.ClickedItem).UniqueId;
+            if (!Frame.Navigate(typeof(ItemPage), ItemId))
             {
-                if (!Frame.Navigate(typeof(PageItemVideo), param))
-                {
-                    var resourceLoader = ResourceLoader.GetForCurrentView("Resources");
-                    throw new Exception(resourceLoader.GetString("NavigationFailedExceptionMessage"));
-                }
-            }
-            else
-            {
-                if (!Frame.Navigate(typeof(ItemPage), param))
-                {
-                    var resourceLoader = ResourceLoader.GetForCurrentView("Resources");
-                    throw new Exception(resourceLoader.GetString("NavigationFailedExceptionMessage"));
-                }
-            }
+               var resourceLoader = ResourceLoader.GetForCurrentView("Resources");
+               throw new Exception(resourceLoader.GetString("NavigationFailedExceptionMessage"));
+            }            
         }
 
         #region Inscription de NavigationHelper

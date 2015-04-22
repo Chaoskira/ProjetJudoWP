@@ -37,8 +37,6 @@ namespace App_Judo
 
 
         private String research;
-       
-        ParametreNavigate param = new ParametreNavigate();
 
         public HubPage()
         {
@@ -109,8 +107,7 @@ namespace App_Judo
         private void GroupSection_ItemClick(object sender, ItemClickEventArgs e)
         {
             var groupId = ((SampleDataGroup)e.ClickedItem).UniqueId;
-            param.ParamGroupe = groupId;
-            if (!Frame.Navigate(typeof(SectionPage), param))
+            if (!Frame.Navigate(typeof(TechniPage), groupId))
             {
                 throw new Exception(this.resourceLoader.GetString("NavigationFailedExceptionMessage"));
             }
@@ -124,8 +121,7 @@ namespace App_Judo
             // Accédez à la page de destination souhaitée, puis configurez la nouvelle page
             // en transmettant les informations requises en tant que paramètre de navigation.
             var itemId = ((SampleDataItems)e.ClickedItem).UniqueId;
-            param.ParamGroupe = itemId;
-            if (!Frame.Navigate(typeof(ItemPage), param))
+            if (!Frame.Navigate(typeof(ItemPage), itemId))
             {
                 throw new Exception(this.resourceLoader.GetString("NavigationFailedExceptionMessage"));
             }
