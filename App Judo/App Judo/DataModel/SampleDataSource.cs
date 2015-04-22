@@ -23,15 +23,16 @@ namespace App_Judo.Data
     /// </summary>
     public class SampleDataItems
     {
-        public SampleDataItems(String uniqueId, String title, String subtitle, String imagePath, String description, String content)
+        public SampleDataItems(String uniqueId, String title, String subtitle, String imagePath, String videoPathDemo, String videoPathExpl,String description, String content)
         {
             this.UniqueId = uniqueId;
             this.Title = title;
             this.Subtitle = subtitle;
             this.Description = description;
             this.ImagePath = imagePath;
+            this.VideoPathDemo = videoPathDemo;
+            this.VideoPathExpl = videoPathExpl;
             this.Content = content;
-            this.Item = new ObservableCollection<SampleDataTech>();
         }
 
         public string UniqueId { get; private set; }
@@ -39,36 +40,9 @@ namespace App_Judo.Data
         public string Subtitle { get; private set; }
         public string Description { get; private set; }
         public string ImagePath { get; private set; }
+        public string VideoPathDemo { get; private set; }
+        public string VideoPathExpl { get; private set; }
         public string Content { get; private set; }
-        public ObservableCollection<SampleDataTech> Item { get; set; }
-
-        public override string ToString()
-        {
-            return this.Title;
-        }
-    }
-
-    public class SampleDataTech
-    {
-        public SampleDataTech(String uniqueId, String title, String traduction, String subtitle, String imagePath, String videoPath ,String description)
-        {
-            this.UniqueId = uniqueId;
-            this.Title = title;
-            this.Traduction = traduction;
-            this.Subtitle = subtitle;
-            this.Description = description;
-            this.ImagePath = imagePath;
-            this.VideoPath = videoPath;
-        }
-
-        public string UniqueId { get; private set; }
-        public string Title { get; private set; }
-        public string Traduction { get; private set; }
-        public string Subtitle { get; private set; }
-        public string Description { get; private set; }
-        public string ImagePath { get; private set; }
-        public string Content { get; private set; }
-        public string VideoPath { get; private set; }
 
         public override string ToString()
         {
@@ -146,15 +120,6 @@ namespace App_Judo.Data
         }
 
 
-        public static async Task<SampleDataTech> GetTechAsync(string uniqueId)
-        {
-            await _sampleDataSource.GetSampleDataAsync();
-            // Une simple recherche linéaire est acceptable pour les petits groupes de données
-            var matches = _sampleDataSource.Groups.SelectMany(group => group.Items.SelectMany(item => item.Item)).Where((itemt) => itemt.UniqueId.Equals(uniqueId));
-            if (matches.Count() == 1) return matches.First();
-            return null;
-        }
-
 
         private async Task GetSampleDataAsync()
         {
@@ -186,21 +151,11 @@ namespace App_Judo.Data
                                                        itemsObject["Title"].GetString(),
                                                        itemsObject["Subtitle"].GetString(),
                                                        itemsObject["ImagePath"].GetString(),
+                                                       itemsObject["VideoPathDemo"].GetString(),
+                                                       itemsObject["VideoPathExpl"].GetString(),
                                                        itemsObject["Description"].GetString(),
                                                        itemsObject["Content"].GetString()));
-
-                    foreach (JsonValue SousItemValue in itemsObject["SousItems"].GetArray())
-                    {
-                        JsonObject SouItemObject = SousItemValue.GetObject();
-                        group.Items[group.Items.Count - 1].Item.Add(new SampleDataTech(SouItemObject["UniqueId"].GetString(),
-                                                           SouItemObject["Title"].GetString(),
-                                                           SouItemObject["Traduction"].GetString(),
-                                                           SouItemObject["Subtitle"].GetString(),
-                                                           SouItemObject["ImagePath"].GetString(),
-                                                           SouItemObject["VideoPath"].GetString(),
-                                                           SouItemObject["Description"].GetString()));
-                        //group.Items[group.Items.Count - 1].Item.Add(new SampleDataTech("a", "b", "c", "Assets/LightGray.png", "e"));
-                    }
+                    
                 }
                 this.Groups.Add(group);
             }
