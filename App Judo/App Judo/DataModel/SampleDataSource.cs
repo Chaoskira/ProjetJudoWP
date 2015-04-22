@@ -23,19 +23,23 @@ namespace App_Judo.Data
     /// </summary>
     public class SampleDataItems
     {
-        public SampleDataItems(String uniqueId, String title, String subtitle, String imagePath, String videoPathDemo, String videoPathExpl,String description, String content)
+        public SampleDataItems(String uniqueId, String ceinture, String title, String traduction, String subtitle, String imagePath, String videoPathDemo, String videoPathExpl,String description, String content)
         {
             this.UniqueId = uniqueId;
+            this.Ceinture = ceinture;
             this.Title = title;
+            this.Traduction = traduction;
             this.Subtitle = subtitle;
-            this.Description = description;
             this.ImagePath = imagePath;
             this.VideoPathDemo = videoPathDemo;
             this.VideoPathExpl = videoPathExpl;
+            this.Description = description;
             this.Content = content;
         }
 
         public string UniqueId { get; private set; }
+        public string Ceinture { get; private set; }
+        public string Traduction { get; private set; }
         public string Title { get; private set; }
         public string Subtitle { get; private set; }
         public string Description { get; private set; }
@@ -148,6 +152,8 @@ namespace App_Judo.Data
                     
                     JsonObject itemsObject = itemsValue.GetObject();
                     group.Items.Add(new SampleDataItems(itemsObject["UniqueId"].GetString(),
+                                                       itemsObject["Ceinture"].GetString(),
+                                                       itemsObject["Traduction"].GetString(),
                                                        itemsObject["Title"].GetString(),
                                                        itemsObject["Subtitle"].GetString(),
                                                        itemsObject["ImagePath"].GetString(),
